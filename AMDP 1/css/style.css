@@ -2,6 +2,8 @@
     --txt-white: white;
     --txt-black: black;
     --bg-dark: rgb(50, 50, 50);
+    --bg-dark2: rgb(40, 40, 45);
+    --bg-dark3: rgb(70, 70, 70);
     --bg-blue: rgb(110, 219, 255);
     --bg-hover-dark: rgb(30, 30, 30);
     --bg-hover-blue: rgb(110, 219, 255);
@@ -9,7 +11,7 @@
     --transition-time: 0.3s;
 
 
-    --test-bg1: yellow;
+    --test-bg1: brown;
     --test-bg2: green;
     --test-bg3: blue;
 }
@@ -18,9 +20,6 @@
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-a{
-    text-decoration: none;
 }
 .left{
     float: left;
@@ -61,6 +60,7 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 
     font-size: 20px;
 }
@@ -82,7 +82,9 @@ nav a {
     float: left;
     font-size: 18px;
     text-align: center;
-    padding: 15px 20px;
+    font-weight: 600;
+    padding: 15px 30px;
+    text-decoration: none;
 }
 
 nav .nav-home{
@@ -111,9 +113,10 @@ nav .nav-menu{
     background-color: var(--bg-dark);
 
     font-size: 18px;
+    font-weight: 600;
     border: none;
     outline: none;
-    padding: 14px 30px;
+    padding: 15px 38px;
     height: 100%;
     font-family: inherit;
     margin: 0; 
@@ -151,6 +154,7 @@ nav .nav-menu{
     text-decoration: none;
     display: block;
     text-align: left;
+    text-decoration: none;
 }
 
 .dropdown-content a:hover {
@@ -171,6 +175,7 @@ main{
     width: 100%;
 }
 
+/* home.html */
 .home{
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/background_home.jpg");
     height: 700px;
@@ -193,6 +198,51 @@ main{
     font-size: 16px;
     padding: 10px 16px;
     border-radius: 200px;
+    text-decoration: none;
+}
+
+/* about.html */
+.about {
+    background-color: var(--bg-dark2);
+    color: var(--txt-white);
+}
+
+.about .title{
+    background-color: var(--bg-dark3);
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+.about .title h1{
+    padding-top: 40px;
+    font-size: 48px; 
+}
+
+.about .content{
+    margin: 0px 15%;
+    margin-top: 40px;
+    padding-bottom: 50px;
+
+    text-align: justify;
+}
+
+.about .contact{
+    margin-top: 20px;
+}
+
+.about .contact h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about .contact a{
+    color: var(--txt-white);
+    text-decoration: none;
+}
+
+.about .contact a:hover {
+    text-decoration: underline;
 }
 
 /* If screen is below 600 px */
@@ -218,6 +268,19 @@ main{
     .home p {
         font-size: 24px;
     }
+
+    .about .content{
+        line-height: 160%;
+        word-spacing: 4px;
+    }
+    
+    .about .content p{
+        font-size: 14px;
+    }
+
+    .about .contact p {
+        font-size: 12px;
+    }
 }
 
 /* If screen is above 600px */
@@ -237,6 +300,19 @@ main{
 
     .home p {
         font-size: 36px;
+    }
+
+    .about .content{
+        line-height: 200%;
+        word-spacing: 7px;
+    }
+    
+    .about .content p{
+        font-size: 16px;
+    }
+
+    .about .contact p {
+        font-size: 14px;
     }
 }
 
@@ -263,6 +339,7 @@ footer p {
 
 .footer-logos a {
     margin: 0px 20px;
+    text-decoration: none;
 }
 
 .footer-logos img {
