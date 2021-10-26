@@ -31,7 +31,18 @@
         <a class="nav-menu" href="./about.html">ABOUT US</a>
     </nav>
     <main>
-        Lorem Ipsum Dolor Sit Amet
+        <div class="login">
+            <h1>Login</h1>
+            <form name="login" action="./home.html" method="post" onsubmit="return validateLogin()">
+                <label for="email">Email</label> <br />
+                <input type="email" name="email" id="email" /> <br />
+                <label for="password">Password</label> <br />
+                <input type="password" name="password" id="password" /> <br />
+                <input type="submit" value="Login">
+            </form>
+            <div id="error"></div>
+            <p>Want to join us? Register <a href="./register.html">here</a></p>
+        </div>
     </main>
     <footer>
         <div class="footer-logos">
@@ -41,5 +52,7 @@
         </div>
         <p>Copyright &copy; 2021 Jason Ananda Cindra. All rights reserved</p>
     </footer>
+
+    <script src="../js/validate.js"></script>
 </body>
 </html>

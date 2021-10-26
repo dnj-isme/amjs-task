@@ -139,6 +139,7 @@ nav .nav-menu{
 }
 
 .dropdown-content {
+    
     display: none;
     position: absolute;
     background-color: var(--bg-dark);
@@ -175,7 +176,7 @@ main{
     width: 100%;
 }
 
-/* home.html */
+/* home.html section */
 .home{
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/background_home.jpg");
     height: 700px;
@@ -201,7 +202,7 @@ main{
     text-decoration: none;
 }
 
-/* about.html */
+/* about.html section */
 .about {
     background-color: var(--bg-dark2);
     color: var(--txt-white);
@@ -243,6 +244,60 @@ main{
 
 .about .contact a:hover {
     text-decoration: underline;
+}
+
+/* login.html section */
+.login{
+    height: 500px;
+    text-align: center;
+}
+
+.login h1{
+    margin-top: 70px;
+    margin-bottom: 30px;
+
+    font-size: 56px;
+}
+
+.login form label, .login form input{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.login form input:not(:last-child){
+    width: 300px;
+    outline: 0;
+    border-width: 0 0 2px;
+}
+
+.login form input:last-child{
+    padding: 4px 40px;
+    border-radius: 200px;
+    color: var(--txt-white);
+    border-style: none;
+    margin-top: 10px;
+    background-color: var(--bg-dark);
+}
+
+.login form input:last-child:hover{
+    transition-duration: var(--transition-time);
+    -webkit-transition-duration: var(--transition-time);
+    background-color: var(--bg-hover-dark);
+}
+
+.login a{
+    text-decoration: none;
+}
+.login a:hover{
+    text-decoration: underline;
+}
+
+/* div for erorr */
+#error{
+    height: 20px;
+    font-size: 16px;
+    color: red;
 }
 
 /* If screen is below 600 px */
