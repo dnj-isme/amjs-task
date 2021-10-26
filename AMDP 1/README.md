@@ -1,0 +1,1 @@
+Catatan: saya tidak mempunyai akun twitter, jadi akan saya arahkan ke twitter.com
