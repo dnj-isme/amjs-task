@@ -1,11 +1,7 @@
-<!-- This is only filled with header, nav, and footer  -->
-<!-- Copy this for template  -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COPY ME</title>
     <link rel="stylesheet" href="../css/style.css">
@@ -21,7 +17,7 @@
     <nav>
         <a class="nav-home" href="./home.html">HOME</a>
         <div class="dropdown">
-            <button class="nav-menu dropbtn">MENU <span style="font-size: 10px;">&#9660;</span></button>
+            <button class="nav-menu dropbtn" onclick="window.location.href='./menu.html';">MENU <span style="font-size: 10px;">&#9660;</span></button>
             <div class="dropdown-content">
                 <a href="./menu.html#burger">BURGER</a>
                 <a href="./menu.html#rice">RICE & PASTA</a>
@@ -31,7 +27,33 @@
         <a class="nav-menu" href="./about.html">ABOUT US</a>
     </nav>
     <main>
-        Lorem Ipsum Dolor Sit Amet
+        <div class="register forms">
+            <h1>Register</h1>
+            <form name="register" action="#" method="post" onsubmit="return validateRegister()">
+                <label for="name">Name</label>
+                <input type="name" name="name" id="name" /> <br />
+                <label for="email">Email</label> <br />
+                <input type="email" name="email" id="email" /> <br />
+                <div class="radio">
+                    <label>Gender</label> <br />
+                    <input type="radio" name="gender" id="M" value="M" /> <label for="M">Male</label>
+                    <input type="radio" name="gender" id="F" value="F" /> <label for="F">Female</label> <br />
+                </div>
+                <label for="city">City</label> <br />
+                <select name="city" id="city">
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Bogor">Bogor</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Surabaya">Surabaya</option>
+                </select>
+                <label for="password">Password</label> <br />
+                <input type="password" name="password" id="password" /> <br />
+                <label for="conf">Confirm Password</label> <br />
+                <input type="password" name="conf" id="conf" /> <br />
+                <div class="submit"><input type="submit" value="Register"></div>
+            </form>
+            <div id="error"></div>
+        </div>
     </main>
     <footer>
         <div class="footer-logos">
@@ -41,5 +63,7 @@
         </div>
         <p>Copyright &copy; 2021 Jason Ananda Cindra. All rights reserved</p>
     </footer>
+
+    <script src="../js/validate.js"></script>
 </body>
 </html>

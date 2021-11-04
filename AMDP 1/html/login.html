@@ -1,11 +1,7 @@
-<!-- This is only filled with header, nav, and footer  -->
-<!-- Copy this for template  -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COPY ME</title>
     <link rel="stylesheet" href="../css/style.css">
@@ -21,7 +17,7 @@
     <nav>
         <a class="nav-home" href="./home.html">HOME</a>
         <div class="dropdown">
-            <button class="nav-menu dropbtn">MENU <span style="font-size: 10px;">&#9660;</span></button>
+            <button class="nav-menu dropbtn" onclick="window.location.href='./menu.html';">MENU <span style="font-size: 10px;">&#9660;</span></button>
             <div class="dropdown-content">
                 <a href="./menu.html#burger">BURGER</a>
                 <a href="./menu.html#rice">RICE & PASTA</a>
@@ -31,7 +27,7 @@
         <a class="nav-menu" href="./about.html">ABOUT US</a>
     </nav>
     <main>
-        <div class="login">
+        <div class="login forms">
             <h1>Login</h1>
             <form name="login" action="./home.html" method="post" onsubmit="return validateLogin()">
                 <label for="email">Email</label> <br />
