@@ -335,12 +335,63 @@ main{
     text-align: center;
 }
 
-
 /* div for erorr */
 #error{
     height: 20px;
     font-size: 16px;
     color: red;
+}
+
+/* Menu section */
+.menu {
+    background-image: url("../images/background_menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--txt-white);
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.menu h1 {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    font-size: 64px;
+}
+
+.menu-container {
+    margin: 0px 10%;
+    width: 80%;
+    text-align: center;
+}
+
+.menu-list {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.menu-item {
+    color: var(--txt-black);
+    background-color: beige;
+    overflow: hidden;
+    float: left;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+.menu-img-container {
+    height: 70%;
+    width: 80%;
+    margin: 0% 10%;
+}
+
+.menu-img-container img{
+    width: 100%;
+    margin: auto;
+}
+
+.fav {
+    background-color: gold;
+    height: 20%
 }
 
 /* If screen is below 600 px */
@@ -379,6 +430,25 @@ main{
     .about .contact p {
         font-size: 12px;
     }
+
+    .menu h1 {
+        font-size: 30px;
+    }
+
+    .menu p {
+        font-size: 16px;
+    }
+
+    .menu-item {
+        border-radius: 20px;
+        width: 45%;
+        height: 44vw;
+        margin: 4px 2%;
+    }
+
+    .menu-list p , .fav{
+        font-size: 3vw;
+    }
 }
 
 /* If screen is above 600px */
@@ -411,6 +481,25 @@ main{
 
     .about .contact p {
         font-size: 14px;
+    }
+    
+    .menu h1 {
+        font-size: 64px;
+    }
+    
+    .menu p {
+        font-size: 18px;
+    }
+
+    .menu-item {
+        border-radius: 20px;
+        width: 23%;
+        height: 22vw;
+        margin: 0px 1%;
+    }
+
+    .menu-list p , .fav{
+        font-size: 1.5vw;
     }
 }
 
